@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enzyme-to-json-mock-props should mock the indicated props 1`] = `
+<SubComponent
+  asd={
+    Object {
+      "qwe": 321,
+    }
+  }
+  foo="[foo]"
+  iop="[iop]"
+/>
+`;
+
+exports[`enzyme-to-json-mock-props should render properly 1`] = `
+<SubComponent
+  asd={
+    Object {
+      "qwe": 321,
+    }
+  }
+  foo={
+    Object {
+      "bar": 123,
+    }
+  }
+  iop="asd"
+/>
+`;
