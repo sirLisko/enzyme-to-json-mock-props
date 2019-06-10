@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { shallow, CommonWrapper } from "enzyme";
 
 import { configure } from "enzyme";
