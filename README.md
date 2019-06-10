@@ -1,4 +1,4 @@
-# enzyme-to-json-mock-props
+# enzyme-to-json-mock-props [![npm][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url]
 
 > it gives you the ability to mock props generated via `enzyme-to-json`.
 
