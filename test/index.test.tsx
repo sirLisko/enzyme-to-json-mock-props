@@ -9,7 +9,9 @@ import mockProps from "../src";
 
 const SubComponent = () => <div />;
 
-const Component = (props: any) => <SubComponent {...props} />;
+const Component = (props: any) => (
+  <SubComponent {...props} style={{ background: "red", color: "black" }} />
+);
 
 describe("enzyme-to-json-mock-props", () => {
   let wrapper: CommonWrapper;
@@ -17,10 +19,10 @@ describe("enzyme-to-json-mock-props", () => {
     foo: {
       bar: 123
     },
+    foobar: "asd",
     asd: {
       qwe: 321
-    },
-    iop: "asd"
+    }
   };
 
   beforeEach(() => {
@@ -32,6 +34,8 @@ describe("enzyme-to-json-mock-props", () => {
   });
 
   it("should mock the indicated props", () => {
-    expect(mockProps(wrapper, ["foo", "poi", "iop"])).toMatchSnapshot();
+    expect(
+      mockProps(wrapper, ["foo", "foobar", "style", "qwe"])
+    ).toMatchSnapshot();
   });
 });

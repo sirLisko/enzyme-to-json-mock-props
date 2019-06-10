@@ -8,7 +8,8 @@ exports[`enzyme-to-json-mock-props should mock the indicated props 1`] = `
     }
   }
   foo="[foo]"
-  iop="[iop]"
+  foobar="[foobar]"
+  style="[style]"
 />
 `;
 
@@ -24,6 +25,12 @@ exports[`enzyme-to-json-mock-props should render properly 1`] = `
       "bar": 123,
     }
   }
-  iop="asd"
+  foobar="asd"
+  style={
+    Object {
+      "background": "red",
+      "color": "black",
+    }
+  }
 />
 `;
